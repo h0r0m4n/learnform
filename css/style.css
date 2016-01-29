@@ -699,11 +699,14 @@ svg {
   }
 }
 .layout-1 {
-  background-color: #DBFFDB;
+  background-color: #fff;
   padding: 4em 1em;
 }
 .layout-1 .headline {
   margin-bottom: 4em;
+}
+.layout-1 .headline h2 {
+  line-height: 1.5;
 }
 .layout-1 .columns {
   text-align: center;
@@ -745,11 +748,14 @@ svg {
 }
 
 .layout-2 {
-  background-color: #FFFBC8;
+  background-color: #FFDF44;
   padding: 4em 1em;
 }
 .layout-2 .headline {
   margin-bottom: 4em;
+}
+.layout-2 .headline h2 {
+  line-height: 1.5;
 }
 .layout-2 .columns {
   text-align: center;
@@ -813,7 +819,8 @@ svg {
 }
 
 .pricing {
-  background-color: #E5FDDB;
+  background-color: #383C44;
+  color: #fff;
   padding: 4em 1em;
 }
 .pricing .headline {
@@ -863,7 +870,7 @@ svg {
 }
 
 .newsletter {
-  background-color: #D8F9C3;
+  background-color: #FFDF44;
   padding: 4em 1em;
   margin-bottom: 8.25rem;
 }
@@ -886,6 +893,7 @@ svg {
   max-width: 15em;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.5;
 }
 .newsletter .form {
   text-align: center;
