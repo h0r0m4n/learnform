@@ -60,22 +60,36 @@ svg
       @media screen and (min-width: $media-sm)
         width: 50%
 
+        &:nth-child(2n+1)
+          clear: both
+
+        &:nth-child(2n+2)
+          float: right
+
   &.four
     .column
-      @media screen and (min-width: $media-sm)
+      @media screen and (min-width: $media-sm) and (max-width: $media-md)
         width: 50%
+
+        &:nth-child(2n+1)
+          clear: both
+
+        &:nth-child(2n+2)
+          float: right
 
       @media screen and (min-width: $media-md)
         width: 25%
+
+        &:nth-child(4n+1)
+          clear: both
+
+        &:nth-child(4n+4)
+          float: right
 
 .column
   float: left
   width: 100%
   padding-left: $space-md
   padding-right: $space-md
-
-  &:last-child
-    &:not(:first-child)
-      float: right
 
   // deve essere al contraio
