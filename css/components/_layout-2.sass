@@ -42,6 +42,15 @@
     display: flex
     flex-direction: column
 
+    @media screen and (max-width: $media-sm)
+      margin-bottom: $space-lg
+
+      &:last-child
+        margin-bottom: 0
+
+    @media screen and (max-width: $media-md)
+      margin-bottom: $space-lg
+
   .icon
     width: 4em
     height: 4em

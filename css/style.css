@@ -731,6 +731,14 @@ svg {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 40rem) {
+  .layout-1 .column {
+    margin-bottom: 2em;
+  }
+  .layout-1 .column:last-child {
+    margin-bottom: 0;
+  }
+}
 .layout-1 .icon {
   width: 4em;
   height: 4em;
@@ -779,6 +787,19 @@ svg {
 .layout-2 .column {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 40rem) {
+  .layout-2 .column {
+    margin-bottom: 2em;
+  }
+  .layout-2 .column:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 64rem) {
+  .layout-2 .column {
+    margin-bottom: 2em;
+  }
 }
 .layout-2 .icon {
   width: 4em;
