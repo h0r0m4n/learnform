@@ -516,7 +516,7 @@ figure {
 }
 
 svg {
-  fill: #000 !important;
+  fill: currentColor;
   max-height: 100%;
 }
 
@@ -865,6 +865,12 @@ svg {
 .newsletter {
   background-color: #D8F9C3;
   padding: 4em 1em;
+  margin-bottom: 8.25rem;
+}
+@media screen and (min-width: 80rem) {
+  .newsletter {
+    margin-bottom: 10.3125rem;
+  }
 }
 .newsletter .column {
   margin-bottom: 0.5em;
@@ -911,8 +917,14 @@ svg {
 }
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   padding: 2em 1em;
+  z-index: -1;
+  box-sizing: border-box;
 }
 .footer .social a {
   display: inline-block;
