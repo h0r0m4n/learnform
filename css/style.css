@@ -834,7 +834,7 @@ svg {
 }
 
 .pricing {
-  background-color: #383C44;
+  background-color: #000;
   color: #fff;
   padding: 4em 1em;
 }
@@ -855,7 +855,7 @@ svg {
 }
 .pricing .columns li {
   display: inline-block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
   padding-left: 0.25em;
   padding-right: 0.25em;
   margin-bottom: 0.5em;
@@ -882,6 +882,13 @@ svg {
   position: absolute;
   vertical-align: top;
   font-size: 40%;
+}
+.pricing .button {
+  background-color: #FFDF44;
+  color: #000;
+}
+.pricing .button:hover, .pricing .button:focus {
+  color: #000;
 }
 
 .newsletter {

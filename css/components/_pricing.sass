@@ -1,7 +1,7 @@
 // PRICING ---------------------------------------------------------------------
 
 .pricing
-  background-color: #383C44
+  background-color: $color-1
   color: $color-2
   padding: ($space-lg*2) $space-md
 
@@ -24,7 +24,7 @@
 
     li
       display: inline-block
-      border-bottom: $border-width solid $darken-3
+      border-bottom: $border-width solid $lighten-3
       padding-left: ($space-sm/2)
       padding-right: ($space-sm/2)
       margin-bottom: $space-sm
@@ -60,3 +60,11 @@
         @extend .cp
 
     @extend .cf
+
+  .button
+    background-color: #FFDF44
+    color: $color-1
+
+    &:hover,
+    &:focus
+      color: $color-1
