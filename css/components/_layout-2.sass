@@ -1,0 +1,51 @@
+// LAYOUT 2 --------------------------------------------------------------------
+
+.layout-2
+  background-color: #FFFBC8
+  padding: ($space-lg*2) $space-md
+
+  @extend .cf
+
+  .headline
+    margin-bottom: ($space-lg*2)
+
+  .columns
+    text-align: center
+
+    h1
+      font-size: $h4
+      margin-bottom: 0
+
+      @media screen and (min-width: $media-sm)
+        font-size: $h6
+        margin-bottom: $space-md
+
+    p
+      max-width: 18em
+      margin-left: auto
+      margin-right: auto
+
+      &:first-of-type
+        margin-top: $space-sm
+
+        @media screen and (min-width: $media-sm)
+          margin-top: 0
+
+    figure
+      order: -1
+      margin-bottom: $space-sm
+
+    img
+      border-radius: 50%
+
+  .column
+    display: flex
+    flex-direction: column
+
+  .icon
+    width: 4em
+    height: 4em
+
+    @media screen and (min-width: $media-sm)
+      width: 2.5em
+      height: 2.5em

@@ -1,0 +1,81 @@
+// LAYOUT ----------------------------------------------------------------------
+
+// Reset
+
+*, *:before, *:after
+  box-sizing: inherit
+
+// Image
+
+img
+  display: inline-block
+  max-width: 100%
+  height: auto
+  vertical-align: middle
+  -ms-interpolation-mode: bicubic
+
+figure
+  margin: 0
+
+svg
+  fill: $color-1 !important
+  max-height: 100%
+
+// Headline
+
+.headline
+  text-align: center
+
+  h1
+    font-size: $h2
+    margin-top: 0
+    margin-bottom: 0
+
+  h2
+    font-size: $h5
+    font-weight: $normal
+
+  &.contain
+    max-width: $media-sm
+
+// Container
+
+.contain
+  max-width: $media-md
+  margin-right: auto
+  margin-left: auto
+
+// Grid
+
+.columns
+  box-sizing: border-box
+  overflow: hidden
+  margin-left: -$space-md
+  margin-right: -$space-md
+
+  @extend .cf
+
+  &.two
+    .column
+      @media screen and (min-width: $media-sm)
+        width: 50%
+
+  &.four
+    .column
+      @media screen and (min-width: $media-sm)
+        width: 50%
+
+      @media screen and (min-width: $media-md)
+        width: 25%
+
+.column
+  float: left
+  width: 100%
+  padding-left: $space-md
+  padding-right: $space-md
+
+  &:last-child
+    &:not(:first-child)
+      float: right
+
+  // deve essere al contraio

@@ -1,0 +1,68 @@
+// COLORS ----------------------------------------------------------------------
+
+// lighten($color, $amount)
+// darken($color, $amount)
+
+$color-1: #000;
+$color-2: #fff;
+
+$darken-1: rgba($color-1, .5);
+$darken-2: rgba($color-1, .25);
+$darken-3: rgba($color-1, .125);
+$darken-4: rgba($color-1, .0625);
+
+$lighten-1: rgba($color-2, .5);
+$lighten-2: rgba($color-2, .25);
+$lighten-3: rgba($color-2, .125);
+$lighten-4: rgba($color-2, .0625);
+
+$selection: yellow;
+
+// TRANSITIONS -----------------------------------------------------------------
+
+$material: cubic-bezier(0.4, 0, 0.2, 1);
+
+// SIZES -----------------------------------------------------------------------
+
+$base: 16 !default;
+
+$font-sm: (16/$base)*100%;
+$font-md: (18/$base)*100%;
+$font-lg: (20/$base)*100%;
+
+// Borders
+
+$border-width: 1px;
+$border-radius: 8px;
+
+// SPACES ----------------------------------------------------------------------
+
+$space-sm: .5em;
+$space-md:  1em;
+$space-lg:  2em;
+
+// TYPOGRAPHY ------------------------------------------------------------------
+
+$font-1: "Karla", sans-serif;
+$normal: 400;
+$bold: 700;
+
+$h1: 48/$base+em;
+$h2: 36/$base+em;
+$h3: 24/$base+em;
+$h4: 20/$base+em;
+$h5: 18/$base+em;
+$h6: 16/$base+em;
+
+// BREAKPOINTS -----------------------------------------------------------------
+
+$divider: 16;
+$sm-breakpoint: 640;
+$md-breakpoint: 1024;
+$lg-breakpoint: 1280;
+$xl-breakpoint: 1920;
+
+$media-sm: $sm-breakpoint/$divider+rem;
+$media-md: $md-breakpoint/$divider+rem;
+$media-lg: $lg-breakpoint/$divider+rem;
+$media-xl: $xl-breakpoint/$divider+rem;

@@ -1,0 +1,61 @@
+// PRICING ---------------------------------------------------------------------
+
+.pricing
+  background-color: #E5FDDB
+  padding: ($space-lg*2) $space-md
+
+  @extend .cf
+
+  .headline
+    margin-bottom: ($space-lg*2)
+
+  .columns
+    text-align: center
+
+    h1
+      font-size: $h3
+      margin-top: 0
+      margin-bottom: 0
+
+    ul
+      list-style: none
+      padding-left: 0
+
+    li
+      display: inline-block
+      border-bottom: $border-width solid $darken-3
+      padding-left: ($space-sm/2)
+      padding-right: ($space-sm/2)
+      margin-bottom: $space-sm
+
+      &:last-child
+        margin-bottom: 0
+
+      &.yes
+
+      &.no
+        opacity: .125
+        text-decoration: line-through
+
+    p
+      max-width: 18em
+      margin-left: auto
+      margin-right: auto
+
+      &:first-of-type
+        margin-top: $space-sm
+
+  .column
+
+  .price
+    span
+      opacity: .25
+
+      &.featured
+        position: absolute
+        vertical-align: top
+        font-size: 40%
+
+        @extend .cp
+
+    @extend .cf

@@ -1,0 +1,40 @@
+// LAYOUT 1 --------------------------------------------------------------------
+
+.layout-1
+  background-color: #DBFFDB
+  padding: ($space-lg*2) $space-md
+
+  @extend .cf
+
+  .headline
+    margin-bottom: ($space-lg*2)
+
+  .columns
+    text-align: center
+
+    h1
+      font-size: $h4
+      margin-bottom: 0
+
+    p
+      max-width: 18em
+      margin-left: auto
+      margin-right: auto
+
+      &:first-of-type
+        margin-top: $space-sm
+
+    figure
+      order: -1
+      margin-bottom: $space-md
+
+    img
+      border-radius: 50%
+
+  .column
+    display: flex
+    flex-direction: column
+
+  .icon
+    width: 4em
+    height: 4em
