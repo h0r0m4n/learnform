@@ -1,19 +1,39 @@
 head
   meta(charset="utf-8")
   meta(http-equiv="x-ua-compatible", content="ie=edge")
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  
+  //- Responsive
+  meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
 
+  //- iOS
   meta(name="apple-mobile-web-app-capable", content="yes")
   meta(name="apple-mobile-web-app-status-bar-style", content="white")
   meta(name="apple-mobile-web-app-title", content="")
+  
+  //- Android
   meta(name="mobile-web-app-capable", content="yes")
   meta(name="theme-color", content="#FFDF44")
 
+  //- IE 10
   meta(name="msapplication-tap-highlight", content="no")
 
-  meta(name="description", content="Subscribe with #{title} to connect with other passionate fans and get exclusive high-quality content")
-  meta(name="keywords", content="design, project, organizzation, idea, prototype, professionals")
-  meta(name="author", content="Roman Horokhovatskyy")
+  //- FB
+  meta(property="og:title", content="#{title}")
+  meta(property="og:description", content="#{description}")
+  meta(property="og:image", content="#{cover}")
+
+  //- Twitter
+  meta(property="twitter:card", content="summary")
+  meta(property="twitter:site", content="#{twitter}")
+  meta(property="twitter:title", content="#{title}")
+  meta(property="twitter:description", content="#{description}")
+  meta(property="twitter:image", content="#{cover}")
+
+  //- SEO
+  meta(name="description", content="#{description}")
+  meta(name="keywords", content="#{keywords}")
+  meta(name="author", content="#{author}")
   meta(name="robots", content="noindex nofollow")
+
   title #{title}
   link(rel="stylesheet", href="css/style.css")
