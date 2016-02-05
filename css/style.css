@@ -483,7 +483,7 @@ a:focus {
   clear: both;
 }
 
-.vh {
+.vh, .footer ~ * {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
