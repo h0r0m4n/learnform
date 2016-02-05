@@ -483,7 +483,7 @@ a:focus {
   clear: both;
 }
 
-.vh, .footer ~ * {
+.vh {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -970,6 +970,13 @@ svg {
 .footer .copy p {
   margin-top: 0.5em;
   margin-bottom: 0;
+}
+
+.footer ~ * {
+  display: none !important;
+}
+.footer ~ * > * {
+  display: none !important;
 }
 
 body {
