@@ -1,6 +1,6 @@
 # Learnform
 
-An exam of web design for [IED](http://www.ied.edu/).
+A landing without any framework
 
 ## Dependencies
 
